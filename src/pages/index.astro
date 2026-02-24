@@ -49,7 +49,7 @@ import Layout from '../layouts/Layout.astro';
 							</a>
 							<a href="/resume-jacob-beallor.pdf" target="_blank" class="cta-secondary">
 								<svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-								Resume ↗
+								Resume
 							</a>
 						</div>
 					</div>
@@ -73,39 +73,37 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 				<div class="projects-grid">
 					<a href="https://spotify-wrapped-revisited.vercel.app/" target="_blank" rel="noopener" class="project-card reveal">
-						<div class="project-num">01</div>
 						<h3 class="project-title">Spotify Wrapped 2.0</h3>
 						<p class="project-desc">
 							Spotify Wrapped drops once a year, but why wait? I built my own dashboard to explore 9 years of
-							listening history anytime I want. A Python + DuckDB pipeline transforms 88,000+ plays into clean
-							aggregates, then a Next.js app with ECharts brings it to life.
+							listening history. A Python + Postgres pipeline loads and transforms 4k+ hours of streaming, then
+							a Next.js app brings it to life. Track trends, discover patterns, and get insights Spotify doesn't
+							show you.
 						</p>
 						<div class="project-footer">
 							<div class="project-tags">
-								<span>Python</span><span>DuckDB</span><span>Next.js</span><span>ECharts</span>
+								<span>Python</span><span>Postgres</span><span>Next.js</span>
 							</div>
 							<span class="project-cta">View dashboard ↗</span>
 						</div>
 					</a>
 
 					<a href="https://synesthesia-color-calendar.vercel.app" target="_blank" rel="noopener" class="project-card reveal" data-delay="0.1">
-						<div class="project-num">02</div>
 						<h3 class="project-title">Color³ — Synesthesia Calendar</h3>
 						<p class="project-desc">
-							Inspired by my girlfriend's synesthesia — January is blue, Friday is green, the 17th is orange.
-							Map your own color associations to months, days, and weekdays, then discover rare "Color³ days"
-							when all three align.
+							Inspired by my girlfriend's synesthesia - January is blue, Friday is green, the 17th is orange. Map your 
+							own color associations to months, days, and weekdays, then discover rare "Color³ days" when all three align. 
+							Explore collective patterns and see how different people perceive time through color.
 						</p>
 						<div class="project-footer">
 							<div class="project-tags">
-								<span>React</span><span>Data Viz</span><span>Crowdsourced</span>
+								<span>React</span><span>Tailwind</span><span>Data Viz</span>
 							</div>
 							<span class="project-cta">View live app ↗</span>
 						</div>
 					</a>
 
 					<a href="https://4things.ca" target="_blank" rel="noopener" class="project-card reveal" data-delay="0.2">
-						<div class="project-num">03</div>
 						<h3 class="project-title">4Things — Party Game</h3>
 						<p class="project-desc">
 							Think you know your friends? Each round, you pick your favorite from four options, then predict
@@ -114,14 +112,13 @@ import Layout from '../layouts/Layout.astro';
 						</p>
 						<div class="project-footer">
 							<div class="project-tags">
-								<span>Full-Stack</span><span>Real-time</span><span>Multiplayer</span>
+								<span>Full-Stack</span><span>FastAPI</span><span>React</span>
 							</div>
 							<span class="project-cta">Play at 4things.ca ↗</span>
 						</div>
 					</a>
 
 					<article class="project-card reveal" data-delay="0.3">
-						<div class="project-num">04</div>
 						<h3 class="project-title">Arbitrage Betting Finder</h3>
 						<p class="project-desc">
 							Built a Python app that identified arbitrage opportunities across multiple sportsbooks in real-time.
@@ -191,14 +188,10 @@ import Layout from '../layouts/Layout.astro';
 						<span class="section-label">03 — ABOUT</span>
 						<h2 class="section-title">About Me</h2>
 						<p>
-							I'm a Fintech Analytics Manager at Jobber with a background in applied mathematics and engineering
-							from Queen's University. I specialize in building predictive models, designing data infrastructure
-							with dbt, and creating self-serve analytics that empower teams to make data-driven decisions.
+							My interest in data started in university, studying applied math and computer engineering at Queen's, where I got hooked on how math, stats, and computer science could explain real-world problems and reveal patterns you'd otherwise miss. That curiosity led to roles at Bell, then 7Shifts, and now Jobber, where I lead analytics for the fintech side of the business.
 						</p>
 						<p>
-							I'm also a CFA Level I charterholder (passed Feb 2024). Beyond my day job, I build data projects
-							that solve real problems — from real-time multiplayer games to arbitrage detection systems. I believe
-							the best way to learn is by building.
+							These days I spend most of my time building self-serve dashboards, running deep dives, and shaping our analytics layer so people can get trustworthy answers quickly. I also work on data science projects, including predictive modeling and experimentation, and increasingly use Cursor and AI tools to explore, discover new ideas and iterate faster.
 						</p>
 						<p class="location-tag">
 							<svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/></svg>
@@ -253,18 +246,21 @@ import Layout from '../layouts/Layout.astro';
 					<span class="section-label">04 — PERSONAL</span>
 					<h2 class="section-title">Beyond the Data</h2>
 					<p class="section-sub">
-						When I'm not analyzing data, you'll find me on trails with my dog,
-						exploring new cities, or chasing good coffee.
+						Outside of work, you'll often find me traveling, exploring the great outdoors, or hanging out with my dog Tuesday.
 					</p>
 				</div>
 				<div class="photo-grid">
 					<div class="photo-item reveal">
-						<img src="/dog.jpg" alt="My dog" loading="lazy" />
-						<p class="photo-caption">My hiking companion</p>
+						<img src="/madeira.JPG" alt="Madeira" loading="lazy" />
+						<p class="photo-caption">Madeira - 2024</p>
 					</div>
-					<div class="photo-item reveal" data-delay="0.15">
-						<img src="/travel.jpg" alt="Travel photo" loading="lazy" />
-						<p class="photo-caption">Recent adventure</p>
+					<div class="photo-item reveal" data-delay="0.1">
+						<img src="/japan.jpeg" alt="Japan" loading="lazy" />
+						<p class="photo-caption">Japan - 2025</p>
+					</div>
+					<div class="photo-item reveal" data-delay="0.2">
+						<img src="/dog.jpeg" alt="My dog" loading="lazy" />
+						<p class="photo-caption">Tuesday - My BFF</p>
 					</div>
 				</div>
 			</div>
@@ -284,7 +280,7 @@ import Layout from '../layouts/Layout.astro';
 							<a href="https://www.linkedin.com/in/jacob-beallor" target="_blank" rel="noopener">LinkedIn</a>
 							<a href="https://github.com/jacobbeallor" target="_blank" rel="noopener">GitHub</a>
 						</div>
-						<p class="footer-copy">Jacob Beallor · 2025</p>
+						<p class="footer-copy">Jacob Beallor</p>
 					</div>
 				</div>
 			</div>
@@ -422,7 +418,7 @@ import Layout from '../layouts/Layout.astro';
 
 	/* ─── Hero ──────────────────────────────────────── */
 	.hero {
-		min-height: calc(100vh - 61px);
+		min-height: calc(80vh - 61px);
 		display: flex;
 		align-items: center;
 		padding: 80px 0 100px;
@@ -558,7 +554,7 @@ import Layout from '../layouts/Layout.astro';
 		padding: 100px 0;
 	}
 	.section-head {
-		margin-bottom: 64px;
+		margin-bottom: 46px;
 	}
 	.section-label {
 		display: block;
@@ -584,7 +580,6 @@ import Layout from '../layouts/Layout.astro';
 		font-size: 16px;
 		color: var(--muted);
 		margin: 0;
-		max-width: 480px;
 		line-height: 1.65;
 	}
 
@@ -632,15 +627,6 @@ import Layout from '../layouts/Layout.astro';
 	}
 	.project-card:hover::before {
 		transform: scaleY(1);
-	}
-	.project-num {
-		font-family: var(--font-mono);
-		font-size: 11px;
-		font-weight: 500;
-		color: var(--accent);
-		letter-spacing: 0.1em;
-		margin-bottom: 16px;
-		opacity: 0.7;
 	}
 	.project-title {
 		font-family: var(--font-display);
@@ -807,25 +793,41 @@ import Layout from '../layouts/Layout.astro';
 	}
 	.photo-grid {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		gap: 24px;
+	}
+	.photo-item {
+		background: var(--card);
+		border-radius: 16px;
+		padding: 10px 10px 16px;
+		border: 1px solid rgba(44, 36, 32, 0.05);
+		box-shadow: 0 18px 35px rgba(44, 36, 32, 0.10);
+		overflow: hidden;
+		transform-origin: center center;
+		transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+	}
+	.photo-item:hover {
+		transform: translateY(-6px) scale(1.01);
+		box-shadow: 0 26px 55px rgba(44, 36, 32, 0.16);
+		border-color: var(--line-mid);
+		background: var(--card-hover);
 	}
 	.photo-item img {
 		width: 100%;
 		height: 340px;
 		object-fit: cover;
+		object-position: center center;
 		border-radius: 10px;
-		border: 1px solid rgba(44, 36, 32, 0.08);
 		display: block;
-		transition: transform 0.3s ease;
+		filter: saturate(1.05) contrast(0.98);
 	}
-	.photo-item:hover img { transform: scale(1.015); }
 	.photo-caption {
-		margin: 14px 0 0;
+		margin: 14px 4px 0;
 		font-family: var(--font-mono);
 		font-size: 12px;
 		color: var(--muted);
-		letter-spacing: 0.04em;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
 	}
 
 	/* ─── Footer ─────────────────────────────────────── */
