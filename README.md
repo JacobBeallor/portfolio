@@ -1,46 +1,60 @@
-# Astro Starter Kit: Basics
+# Portfolio
+
+A personal portfolio site built with [Astro](https://astro.build).
+
+## Quickstart
+
+**Prerequisites:** Node.js 18+
 
 ```sh
-npm create astro@latest -- --template basics
+# 1. Clone the repo
+git clone https://github.com/jbeallor/portfolio.git
+cd portfolio
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the dev server
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+The site will be available at `http://localhost:4321`.
 
-## 🚀 Project Structure
+## Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
+```
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+├── public/             # Static assets (favicon, images, etc.)
+├── src/
+│   ├── assets/         # Processed assets (images, SVGs)
+│   ├── components/     # Reusable Astro components
+│   ├── layouts/        # Page layout templates
+│   └── pages/          # File-based routes (each file = a page)
+├── astro.config.mjs
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Commands
 
-## 🧞 Commands
+All commands are run from the root of the project:
 
-All commands are run from the root of the project, from a terminal:
+| Command             | Action                                      |
+| :------------------ | :------------------------------------------ |
+| `npm install`       | Install dependencies                        |
+| `npm run dev`       | Start dev server at `localhost:4321`        |
+| `npm run build`     | Build production site to `./dist/`          |
+| `npm run preview`   | Preview the production build locally        |
+| `npm run astro ...` | Run Astro CLI commands (e.g. `astro check`) |
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Deployment
 
-## 👀 Want to learn more?
+Build the site and deploy the `./dist/` folder to any static host (Netlify, Vercel, GitHub Pages, etc.):
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```sh
+npm run build
+```
+
+## Resources
+
+- [Astro Documentation](https://docs.astro.build)
+- [Astro Discord](https://astro.build/chat)
