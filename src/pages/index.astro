@@ -928,13 +928,18 @@ import Layout from '../layouts/Layout.astro';
 
 <script>
 	// Scroll reveal
+	const REVEAL_DURATION_MS = 650;
 	const observer = new IntersectionObserver((entries) => {
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
 				const el = entry.target as HTMLElement;
-				const delay = el.dataset.delay;
-				if (delay) el.style.transitionDelay = delay + 's';
+				const delaySec = parseFloat(el.dataset.delay || '0');
+				if (delaySec > 0) el.style.transitionDelay = delaySec + 's';
 				el.classList.add('visible');
+				// Clear delay after entrance animation so hover effects aren't delayed
+				setTimeout(() => {
+					el.style.transitionDelay = '';
+				}, (delaySec * 1000) + REVEAL_DURATION_MS);
 				observer.unobserve(el);
 			}
 		});
