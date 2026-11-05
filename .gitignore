@@ -1,0 +1,5 @@
+# Dependencies and local build output. Add framework-specific entries when the stack is chosen.
+node_modules/
+dist/
+build/
+.DS_Store
