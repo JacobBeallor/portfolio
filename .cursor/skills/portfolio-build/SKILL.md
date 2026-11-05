@@ -11,7 +11,7 @@ Delegate each chunk to the implementer. Delegate scoring to the reviewer. One im
 
 This attempt is one entry in a bake-off. Other agents are building other sites from other briefs, using these same facts. Make this the site a person would actually publish. A recognizable point of view beats a louder page. The hard checks still have to pass.
 
-Read `recipe/content.md`, `recipe/constraints.md`, `recipe/rubric.md`, and the one brief named in the launch prompt before any other work.
+Read `recipe/content.md`, `recipe/constraints.md`, `recipe/rubric.md`, and the one brief named in the launch prompt before any other work. The vault is out of bounds. The brief and `recipe/` are the whole assignment. Do not open, search, or follow a link to `/Users/jbeallor/jacobs-brain` or any other Obsidian vault, even if a user note names that path.
 
 ## 1. Plan
 

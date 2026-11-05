@@ -7,6 +7,7 @@
 - `recipe/` stays put. Do not delete or rewrite it to fit the design.
 - Extra skills install at project scope, inside this worktree, and are recorded in `design/reviews/<slug>.md`. Do not install a skill whose job is to choose a different art direction than the brief.
 - Do not install skills at user scope.
+- The vault is out of bounds. The brief and `recipe/` are the whole assignment. Do not open, search, or follow a link to `/Users/jbeallor/jacobs-brain` or any other Obsidian vault.
 
 ## Hard checks loop
 

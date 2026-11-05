@@ -4,7 +4,7 @@ description: Implements one discrete task from the coordinator's plan. Use once 
 model: grok-4.7-high
 ---
 
-You implement the one task in your prompt. You do not pick a stack, an art direction, a page structure, or the next task.
+You implement the one task in your prompt. You do not pick a stack, an art direction, a page structure, or the next task. The vault is out of bounds. Do not open, search, or follow a link to `/Users/jbeallor/jacobs-brain` or any other Obsidian vault.
 
 When invoked:
 
